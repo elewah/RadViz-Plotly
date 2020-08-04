@@ -13,21 +13,21 @@ import matplotlib.pyplot as plt
 # =============================================================================
 # 
 # =============================================================================
-from _2D_submodules.normalizing import matrixNormlization 
-from _2D_submodules.points_oncircle import get_2Dpoints
-from _2D_submodules.get_anchors_matrix import get_X2Dmatrix
-from _2D_submodules.RadViz_mapping import Radviz2DMapping
-from _2D_submodules.plotly_2Dframe import Dataframe2DPreparation
-from _2D_submodules._2Dscatterplot_plotly import plotRadviz2D
+from RadViz._2D_submodules.normalizing import matrixNormlization 
+from RadViz._2D_submodules.points_oncircle import get_2Dpoints
+from RadViz._2D_submodules.get_anchors_matrix import get_X2Dmatrix
+from RadViz._2D_submodules.RadViz_mapping import Radviz2DMapping
+from RadViz._2D_submodules.plotly_2Dframe import Dataframe2DPreparation
+from RadViz._2D_submodules._2Dscatterplot_plotly import plotRadviz2D
 # =============================================================================
 # 
 # =============================================================================
-from _3D_submodules.normalizing import matrixNormlization 
-from _3D_submodules.points_onsphere import get_3Dpoints
-from _3D_submodules.get_anchors_matrix import get_X3Dmatrix
-from _3D_submodules.RadViz_mapping import Radviz3DMapping
-from _3D_submodules.plotly_3Dframe import Dataframe3DPreparation
-from _3D_submodules._3Dscatterplot_plotly import plotRadviz3D
+from RadViz._3D_submodules.normalizing import matrixNormlization 
+from RadViz._3D_submodules.points_onsphere import get_3Dpoints
+from RadViz._3D_submodules.get_anchors_matrix import get_X3Dmatrix
+from RadViz._3D_submodules.RadViz_mapping import Radviz3DMapping
+from RadViz._3D_submodules.plotly_3Dframe import Dataframe3DPreparation
+from RadViz._3D_submodules._3Dscatterplot_plotly import plotRadviz3D
 # =============================================================================
 #RadViz2D  is designed to be the main 2D Radviz function
 #It has three input y(labels column), X(features dataframe) and BPs (number of Boundaries' points)

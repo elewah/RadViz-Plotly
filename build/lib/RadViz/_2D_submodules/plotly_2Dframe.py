@@ -14,7 +14,7 @@ Created on Mon Aug  3 23:30:48 2020
 # =============================================================================
 import pandas as pd
 import numpy as np
-from _2D_submodules.points_oncircle import get_2Dpoints
+from RadViz._2D_submodules.points_oncircle import get_2Dpoints
 
 
 def Dataframe2DPreparation(S_hat,X,d,BPs,y):

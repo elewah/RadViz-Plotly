@@ -10,7 +10,7 @@ Created on Mon Aug  3 23:20:38 2020
 # =============================================================================
 
 import pandas as pd
-from _3D_submodules.points_onsphere import get_3Dpoints
+from RadViz._3D_submodules.points_onsphere import get_3Dpoints
 
 def get_X3Dmatrix(DS_names):
     DS_names=pd.DataFrame(DS_names)

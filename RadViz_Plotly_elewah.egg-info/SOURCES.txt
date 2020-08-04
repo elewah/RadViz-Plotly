@@ -1,7 +1,7 @@
 README.md
 setup.py
-RadViz/RadViz.py
 RadViz/__init__.py
+RadViz/main.py
 RadViz/_2D_submodules/RadViz_mapping.py
 RadViz/_2D_submodules/_2Dscatterplot_plotly.py
 RadViz/_2D_submodules/__init__.py
@@ -16,7 +16,7 @@ RadViz/_3D_submodules/get_anchors_matrix.py
 RadViz/_3D_submodules/normalizing.py
 RadViz/_3D_submodules/plotly_3Dframe.py
 RadViz/_3D_submodules/points_onsphere.py
-RadViz_Plotly_elewah.egg-info/PKG-INFO
-RadViz_Plotly_elewah.egg-info/SOURCES.txt
-RadViz_Plotly_elewah.egg-info/dependency_links.txt
-RadViz_Plotly_elewah.egg-info/top_level.txt
+RadViz_Plotly_Elewah.egg-info/PKG-INFO
+RadViz_Plotly_Elewah.egg-info/SOURCES.txt
+RadViz_Plotly_Elewah.egg-info/dependency_links.txt
+RadViz_Plotly_Elewah.egg-info/top_level.txt

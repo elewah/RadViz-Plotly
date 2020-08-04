@@ -14,7 +14,7 @@ Created on Mon Aug  3 23:30:48 2020
 # =============================================================================
 import pandas as pd
 import numpy as np
-from _3D_submodules.points_onsphere import get_3Dpoints
+from RadViz._3D_submodules.points_onsphere import get_3Dpoints
 
 def Dataframe3DPreparation(S_hat,X,d,BPs,y):
     frames = [y,S_hat]

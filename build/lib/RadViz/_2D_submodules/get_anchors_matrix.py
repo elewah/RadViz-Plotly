@@ -10,7 +10,7 @@ Created on Mon Aug  3 23:20:38 2020
 # =============================================================================
 
 import pandas as pd
-from _2D_submodules.points_oncircle import get_2Dpoints
+from RadViz._2D_submodules.points_oncircle import get_2Dpoints
 
 def get_X2Dmatrix(DS_names):
     DS_names=pd.DataFrame(DS_names)

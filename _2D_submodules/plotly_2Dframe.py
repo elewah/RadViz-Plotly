@@ -4,9 +4,19 @@ Created on Mon Aug  3 23:30:48 2020
 
 @author: elewah
 """
+# =============================================================================
+# 
+# #DataframePreparation function is created to Concatenate 3 matrixs,
+# #S_hat matrix"mapped version of records "& X matrix"Dimensions Anchors" &Circle matrix "Circle Boundery matrix" 
+# #input are S_hat matrix(samples or Records matrix) and X matrix (dimensions' anchors matrix),
+# #and BPs stand for Number of boundery points that will be used to draw the bounderies of the RadViz space 
+# #Output are the prepared dataframe that will be visualized  
+# =============================================================================
 import pandas as pd
 import numpy as np
 from _2D_submodules.points_oncircle import get_2Dpoints
+
+
 def Dataframe2DPreparation(S_hat,X,d,BPs,y):
     frames = [y,S_hat]
     S_hat = pd.concat(frames,axis=1)

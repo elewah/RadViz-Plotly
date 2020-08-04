@@ -4,6 +4,11 @@ Created on Mon Aug  3 23:20:38 2020
 
 @author: elewah
 """
+# =============================================================================
+# #get_Xmayrix function is designed to return X matrix "Dimension anchors matrix"
+# #input is the number of atterbutes, output is X matrix (Dimension anchors matrix)
+# =============================================================================
+
 import pandas as pd
 from _3D_submodules.points_onsphere import get_3Dpoints
 

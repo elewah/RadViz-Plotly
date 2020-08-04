@@ -29,8 +29,12 @@ from _3D_submodules.RadViz_mapping import Radviz3DMapping
 from _3D_submodules.plotly_3Dframe import Dataframe3DPreparation
 from _3D_submodules._3Dscatterplot_plotly import plotRadviz3D
 # =============================================================================
-# 
+#RadViz2D  is designed to be the main 2D Radviz function
+#It has three input y(labels column), X(features dataframe) and BPs (number of Boundaries' points)
+#the output of this function is 2D RadViz plot
+#mainly this function handles the whole process of Data visualization using the introduced RadViz algorithm(2D version
 # =============================================================================
+
 
 def RadViz2D(y,X,BPs):
     y.rename("index",inplace=True) 
@@ -57,7 +61,10 @@ def RadViz2D(y,X,BPs):
     plotRadviz2D(df)
     
 # =============================================================================
-#  
+#RadViz3D  is designed to be the main 3D Radviz function
+#It has three input y(labels column), X(features dataframe) and BPs (number of Boundaries' points)
+#the output of this function is 3D RadViz  plot
+#mainly this function handles the whole process of Data visualization using the introduced RadViz algorithm(3D version)
 # =============================================================================
  
 def RadViz3D(y,X,BPs):
@@ -85,7 +92,10 @@ def RadViz3D(y,X,BPs):
     plotRadviz3D(df)
    
 # =============================================================================
-#     
+#RadViz3D  is designed to be the main 3D Radviz function (Bar color) used when y are numerical values and not catgories
+#It has three input y(labels column), X(features dataframe) and BPs (number of Boundaries' points)
+#the output of this function is 3D RadViz  plot
+#mainly this function handles the whole process of Data visualization using the introduced RadViz algorithm(3D version)
 # =============================================================================
 
 def RadViz3DH(y,X,BPs):

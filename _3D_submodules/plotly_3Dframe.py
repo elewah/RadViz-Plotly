@@ -4,6 +4,14 @@ Created on Mon Aug  3 23:30:48 2020
 
 @author: elewah
 """
+
+# =============================================================================
+# #Dataframe3DPreparation function is created to Concatenate 3 matrixs,
+# #S_hat matrix"mapped version of records "& X matrix"Dimensions Anchors" &Circle matrix "Circle Boundery matrix" 
+# #input are S_hat matrix(samples or Records matrix) and X matrix (dimensions' anchors matrix),
+# #and BPs stand for Number of boundery points that will be used to draw the bounderies of the RadViz space 
+# #Output are the prepared dataframe that will be visualized 
+# =============================================================================
 import pandas as pd
 import numpy as np
 from _3D_submodules.points_onsphere import get_3Dpoints

@@ -38,16 +38,16 @@ The Radviz-Plotly package has two functions, 2DRadViz that plots the 2D Radial v
 ## Quickstart 
 ### Without Locally Installation
 Try the RadViz-Plotly package**without locally Installation
-Follow these steps</br>
+Follow these steps**</br>
 1- click this link [here](https://mybinder.org/v2/gh/elewah/RadViz-Plotly-Examples/master). It's a collection of interactive Jupyter notebooks  that contains three folders. Each folder contains Dataset and a Jupyter file that use RadViz-Plotly.</br>
 **Hint:**  sometimes this link takes a long time to open as jupyter's environment.</br>
 2- After the jupyter environment comes out, open Car Evaluation Dataset, Election Dataset, or Iris Dataset folder.  </br>
 3- Open file with extension **.ipynb** (the jupyter file)</br>
 4- After the jypyter file loading, from the **cell** list on the toolbar click **Run All** </br>
-**Hints** </br>
-1-At the first running time, it takes time to install the dependences.</br>
-2-This an interactive RadViz package where you can make zoom, fillter lables, and rotate the 3D graph </br>
-3-This packge depends on the [plotly.py](https://plot.ly/python) packge</br>
+**Hints:**  </br></br>
+A- At the first running time, it takes time to install the dependences.</br>
+B- This is an interactive RadViz package where you can make zoom, fillter lables, and rotate the 3D graph </br>
+C- This packge depends on the [plotly.py](https://plot.ly/python) packge</br>
 ### With Locally Installation
  
 1-install **RadViz Plotly** using this command</br>
@@ -74,4 +74,5 @@ The RadViz-Plotly is developed by a research group on the IoT lab at Ontario tec
 ## Copyright and Licenses
 
 Code released under the [MIT license](LICENSE).
+
 

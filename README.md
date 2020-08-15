@@ -31,7 +31,8 @@
     </tr>
 </table>
 
-
+## Short Description 
+The Radviz-Plotly package has two functions, 2DRadViz that plots the 2D Radial visualization and 3DRadViz that plots Radial visualization, using the powerful interactive tools in Plotly library.
 
 
 ## Quickstart 
@@ -65,7 +66,7 @@ or Download by clicking [here](https://github.com/elewah/RadViz-Plotly-Examples/
 </p>
 
 ## About
-The RadViz-Plotly is developed by a research group on the IoT lab at Ontario tech university.
+The RadViz-Plotly is developed by a research group on the IoT lab at Ontario tech university. The Radviz-Plotly package has two functions, 2DRadViz that plots the 2D Radial visualization and 3DRadViz that plots Radial visualization, using the powerful interactive tools in Plotly library.
 
 ## Contact Us
  **Email:** abdelrahman.elewah@ontariotechu.net

@@ -58,7 +58,18 @@ or Download by clicking [here](https://github.com/elewah/RadViz-Plotly-Examples/
 3- Run these examples using jupyter labs to understand how to use RadViz-Plotly package
 
 ---
+## Gallary
+<p align="center">
+  <img src="ReadmePicture/Slide3.PNG" width="450" title="2D RadViz">
+  <img src="ReadmePicture/Slide2.PNG" width="450" alt="accessibility text">
+</p>
 
+## About
+The RadViz-Plotly is developed by a research group on the IoT lab at Ontario tech university.
+
+## Contact Us
+ **Email:** abdelrahman.elewah@ontariotechu.net
+ 
 ## Copyright and Licenses
 
 Code released under the [MIT license](LICENSE).

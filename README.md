@@ -44,7 +44,7 @@ Follow these steps**</br>
 2- After the jupyter environment comes out, open Car Evaluation Dataset, Election Dataset, or Iris Dataset folder.  </br>
 3- Open file with extension **.ipynb** (the jupyter file)</br>
 4- After the jypyter file loading, from the **cell** list on the toolbar click **Run All** </br>
-**Hints:**  </br></br>
+**Hints:**  </br>
 A- At the first running time, it takes time to install the dependences.</br>
 B- This is an interactive RadViz package where you can make zoom, fillter lables, and rotate the 3D graph </br>
 C- This packge depends on the [plotly.py](https://plot.ly/python) packge</br>

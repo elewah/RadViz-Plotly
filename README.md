@@ -60,8 +60,8 @@ or Download by clicking [here](https://github.com/elewah/RadViz-Plotly-Examples/
 ---
 ## Gallary
 <p align="center">
-  <img src="ReadmePicture/Slide3.PNG" width="450" title="2D RadViz">
-  <img src="ReadmePicture/Slide2.PNG" width="450" alt="accessibility text">
+  <img src="ReadmePicture/Slide3.PNG" width="400" title="2D RadViz">
+  <img src="ReadmePicture/Slide2.PNG" width="400" alt="accessibility text">
 </p>
 
 ## About

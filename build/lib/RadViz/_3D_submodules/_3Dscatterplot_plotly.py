@@ -10,9 +10,25 @@ Created on Mon Aug  3 23:37:52 2020
 # #input is the prepared dataframe and the output is the 3D RadViz plot
 # =============================================================================
 import plotly.express as px
-def plotRadviz3D(df):
+import plotly.graph_objects as go 
+import plotly.io as pio
+def plotRadviz3D(df,df_sphere):
+    pio.templates["draft"] = go.layout.Template(
+        layout_annotations=
+        [dict(name="draft watermark", text="",
+              textangle=-30, opacity=0.1,
+              font=dict(color="black", size=100), xref="paper",
+              yref="paper", x=0.5, y=0.5, showarrow=False, ) ])
+    #########################################
+    config = {'toImageButtonOptions': {'format': 'png', # one of png, svg, jpeg, webp,svg
+                                       'filename': 'custom_image',
+                                        'height': 1000,
+                                        'width': 1000,
+                                        'scale': 1 # Multiply title/legend/axis/canvas sizes by this factor
+                                      }}
+    #########################################
     ##chose the colors for the labels 
-    color_sequence=["white"]
+    color_sequence=[]
     for i in px.colors.qualitative.Plotly[1:]:
         color_sequence.append(i)
     color_sequence.append(px.colors.qualitative.Plotly[0])
@@ -24,6 +40,10 @@ def plotRadviz3D(df):
 #     for i in google_color:
 #         color_sequence.append(i)
     df.rename(columns={'index': 'label'},inplace=True)
-    fig = px.scatter_3d(df, x='x', y='y', z='z',
-              color='label',text='AnchorsLabel', color_discrete_sequence=color_sequence,opacity=0.999999999999)
-    fig.show() 
+    fig = go.Figure()
+    fig = px.scatter_3d(df, x='x', y='y', z='z', color="label",color_discrete_sequence=color_sequence,text='AnchorsLabel')
+    fig.add_trace(go.Scatter3d(mode='markers',marker=dict(size=0,color='white',opacity=0.1),
+    x=df_sphere["x"],y=df_sphere["y"],z=df_sphere["z"],showlegend=False))
+#     fig.update_layout(template="draft")
+#     fig.show(config=config)  
+    fig.show()

@@ -17,7 +17,8 @@ import numpy as np
 from RadViz._2D_submodules.points_oncircle import get_2Dpoints
 
 
-def Dataframe2DPreparation(S_hat,X,d,BPs,y):
+
+def Dataframe2DPreparation(S_hat,X,d,BPs,y): 
     frames = [y,S_hat]
     S_hat = pd.concat(frames,axis=1)
     
@@ -25,11 +26,12 @@ def Dataframe2DPreparation(S_hat,X,d,BPs,y):
     ############################## show Xi Dimiensions Anchors
     X=X.reset_index()
     ###############################################
-    AnchorsLabel=np.append(np.full(BPs,''),  X['index'] )
-    AnchorsLabel=np.append(AnchorsLabel, np.full(S_hat.shape[0],'') )
+#     AnchorsLabel=np.append(np.full(BPs,''),  X['index'] )
+    AnchorsLabel=np.append( X['index'], np.full(S_hat.shape[0],'') )
+#     AnchorsLabel=np.append(AnchorsLabel, np.full(S_hat.shape[0],'') )
     ###############################################
     #print(X)
-    label =np.full((d), 'X')
+    label =np.full((d), 'Anchors\' Names')
     X['index']=label
     #print(X)
     ############################# show diminion boundry
@@ -41,8 +43,8 @@ def Dataframe2DPreparation(S_hat,X,d,BPs,y):
     frames = [label,C]
     circle = pd.concat(frames,axis=1)
     #print(circle)
-    frames = [circle,X,S_hat]
+    frames = [X,S_hat]
     df = pd.concat(frames)
     df['AnchorsLabel']=AnchorsLabel
-    #print(df)
-    return df
+#     print(df.head())
+    return df,circle

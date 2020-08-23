@@ -35,7 +35,7 @@ def Dataframe2DPreparation(S_hat,X,d,BPs,y):
     X['index']=label
     #print(X)
     ############################# show diminion boundry
-    C=get_points(1, BPs) #we need to change this area to be dinamically
+    C=get_2Dpoints(1, BPs) #we need to change this area to be dinamically
     C= pd.DataFrame(C)
     label =np.full((BPs), 'circle') #we need to change this area to be dinamically
     label=pd.DataFrame(label)

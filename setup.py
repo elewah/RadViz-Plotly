@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="RadViz-Plotly", # Replace with your own username
-    version="0.0.2",
+    version="0.0.3",
     author="Elewah",
     author_email="abdelrahman.elewah@gmail.com",
     description="2D RadViz and 3D RadViz library, using plotly 2D and 3D scatter plot",

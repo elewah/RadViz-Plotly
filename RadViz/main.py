@@ -35,7 +35,6 @@ from RadViz._3D_submodules._3Dscatterplot_plotly import plotRadviz3D
 #mainly this function handles the whole process of Data visualization using the introduced RadViz algorithm(2D version
 # =============================================================================
 
-
 def RadViz2D(y,X,BPs):
     y.rename("index",inplace=True) 
     #print(X)
@@ -57,16 +56,16 @@ def RadViz2D(y,X,BPs):
     #print("S_hat matrix")
     #print(S_hat)
     d=DS_names.size
-    df = Dataframe2DPreparation(S_hat,X,d,BPs,y)
-    plotRadviz2D(df)
-    
+    df,df_circle =  Dataframe2DPreparation(S_hat,X,d,BPs,y)
+    plotRadviz2D(df,df_circle)
+
 # =============================================================================
 #RadViz3D  is designed to be the main 3D Radviz function
 #It has three input y(labels column), X(features dataframe) and BPs (number of Boundaries' points)
 #the output of this function is 3D RadViz  plot
 #mainly this function handles the whole process of Data visualization using the introduced RadViz algorithm(3D version)
 # =============================================================================
- 
+  
 def RadViz3D(y,X,BPs):
     #print(X)
     #print(100*'*')
@@ -83,14 +82,13 @@ def RadViz3D(y,X,BPs):
     #print("X matrix")
     #print(X)
     #print("*"*100)
-    S_hat=Radviz3DMapping(S,X)
+    S_hat=Radviz2DMapping(S,X)
     #print("*"*100)
     #print("S_hat matrix")
     #print(S_hat)
     d=DS_names.size
-    df = Dataframe3DPreparation(S_hat,X,d,BPs,y)
-    plotRadviz3D(df)
-   
+    df,df_sphere = Dataframe3DPreparation(S_hat,X,d,BPs,y)
+    plotRadviz3D(df,df_sphere)
 # =============================================================================
 #RadViz3D  is designed to be the main 3D Radviz function (Bar color) used when y are numerical values and not catgories
 #It has three input y(labels column), X(features dataframe) and BPs (number of Boundaries' points)

@@ -11,8 +11,8 @@
     <tr>
         <td>Examples</td>
         <td>
-            <a href="https://badge.fury.io/gh/elewah%2FRadViz-Plotly-Examples">
-            <img src="https://badge.fury.io/gh/elewah%2FRadViz-Plotly-Examples.svg" alt="GitHub version" height="18"></a>
+            <a href="https://img.shields.io/badge/Jupyter--Lab-Examples-orange"/>
+            <img src="https://img.shields.io/badge/Jupyter--Lab-Examples-orange"/>
         </td>
     </tr>
     <tr>

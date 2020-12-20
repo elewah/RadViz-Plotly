@@ -11,7 +11,7 @@
     <tr>
         <td>Examples</td>
         <td>
-            <a href="https://img.shields.io/badge/Jupyter--Lab-Examples-orange"/>
+            <a href="https://mybinder.org/v2/gh/elewah/RadViz-Plotly-Examples/master"/>
             <img src="https://img.shields.io/badge/Jupyter--Lab-Examples-orange"/>
         </td>
     </tr>

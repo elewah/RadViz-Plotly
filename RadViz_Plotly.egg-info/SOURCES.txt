@@ -1,3 +1,4 @@
+LICENSE
 README.md
 setup.py
 RadViz/__init__.py

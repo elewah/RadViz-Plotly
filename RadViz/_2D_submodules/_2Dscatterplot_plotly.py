@@ -13,7 +13,7 @@ import plotly.graph_objects as go
 import plotly.io as pio   
 def plotRadviz2D(df,df_circle):
     #######################################################
-    config = {'toImageButtonOptions': {'format': 'png', # one of png, svg, jpeg, webp,svg
+    config = {'toImageButtonOptions': {'format': 'svg', # one of png, svg, jpeg, webp,svg,png
                                        'filename': 'custom_image',
                                         'height': 1000,
                                         'width': 1000,
@@ -48,9 +48,14 @@ def plotRadviz2D(df,df_circle):
         dragmode='select',
         width=1000,
         height=1000,
-        hovermode='closest')
+        hovermode='closest',
+        margin=dict(l=50, r=50,b=50,t=50), #pad=150),
+        legend=dict(orientation="h",yanchor="top",y=1,xanchor="right",x=1,font=dict(size=12)),
+        yaxis_title=None,
+        xaxis_title=None)
+    
 #     fig.update_layout(template="draft")
+#     fig.update_layout(showlegend=False)
 #     fig.show(config=config)  
 #     fig.show()
-#     fig.show(config=config)
-    fig.show()
+    fig.show(config=config)

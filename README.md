@@ -32,6 +32,7 @@
 </table>
 
 ## Short Description 
+RadViz-Plotly is An Open-Source Python package that data scientists can use to draw the 2D, and 3D Radial Visualization (RadViz) plots for any high-dimensional datasets. Using the 3D/2D RadViz plot, we can have a broad vision for data distribution on all provided dimensions to understand the data and discover hidden insights.
 The Radviz-Plotly package has two functions, 2DRadViz that plots the 2D Radial visualization and 3DRadViz that plots Radial visualization, using the powerful interactive tools in Plotly library.
 
 
@@ -68,6 +69,8 @@ or Download by clicking [here](https://github.com/elewah/RadViz-Plotly-Examples/
 </p>
 
 ## About
+RadViz-Plotly is An Open-Source Python package that data scientists can use to draw the 2D, and 3D Radial Visualization (RadViz) plots for any high-dimensional datasets. Using the 3D/2D RadViz plot, we can have a broad vision for data distribution on all provided dimensions to understand the data and discover hidden insights.
+The Radviz-Plotly package has two functions, 2DRadViz that plots the 2D Radial visualization and 3DRadViz that plots Radial visualization, using the powerful interactive tools in Plotly library.
 The RadViz-Plotly package has two functions, 2DRadViz for plotting the 2D Radial visualization, and 3DRadViz for drawing the 3D Radial visualization, using the powerful interactive tools in the Plotly library. A research group on the IoT lab at Ontario tech university developed it.
 
 ## Citations
@@ -80,5 +83,16 @@ Kindly cite this paper in your research if it helps your work.</br>
 ## Copyright and Licenses
 
 Code released under the [MIT license](LICENSE).
+
+</br>
+<div style="display:flex; justify-content: center;">
+<a href="https://ontariotechu.ca/">
+<img src="https://elewah.github.io/Tamra/logos/ontariotechu-log.jpg"  alt="Ontariotechu Logo"  width="250" >
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://iotresearchlab.ca/">
+<img src="https://elewah.github.io/Tamra/logos/IoT-lab.png" width="300" alt="IoT-Lab Logo" title="IoT Lab">
+</a>
+</div>
 
 

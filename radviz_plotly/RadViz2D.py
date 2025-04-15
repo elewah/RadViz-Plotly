@@ -5,12 +5,12 @@ Created on Mon Aug  3 23:40:23 2020
 @author: elewah
 """
 import pandas as pd
-from RadViz._2D_submodules.normalizing import matrixNormlization 
-from RadViz._2D_submodules.points_oncircle import get_2Dpoints
-from RadViz._2D_submodules.get_anchors_matrix import get_X2Dmatrix
-from RadViz._2D_submodules.RadViz_mapping import Radviz2DMapping
-from RadViz._2D_submodules.plotly_2Dframe import Dataframe2DPreparation
-from RadViz._2D_submodules._2Dscatterplot_plotly import plotRadviz2D
+from radviz_plotly._2D_submodules.normalizing import matrixNormlization 
+from radviz_plotly._2D_submodules.points_oncircle import get_2Dpoints
+from radviz_plotly._2D_submodules.get_anchors_matrix import get_X2Dmatrix
+from radviz_plotly._2D_submodules.RadViz_mapping import Radviz2DMapping
+from radviz_plotly._2D_submodules.plotly_2Dframe import Dataframe2DPreparation
+from radviz_plotly._2D_submodules._2Dscatterplot_plotly import plotRadviz2D
 
 def RadViz2D(y,X,BPs):
     y.rename("index",inplace=True) 

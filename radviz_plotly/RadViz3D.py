@@ -5,12 +5,12 @@ Created on Mon Aug  3 23:40:23 2020
 @author: elewah
 """
 import pandas as pd
-from RadViz._3D_submodules.normalizing import matrixNormlization 
-from RadViz._3D_submodules.points_onsphere import get_3Dpoints
-from RadViz._3D_submodules.get_anchors_matrix import get_X3Dmatrix
-from RadViz._3D_submodules.RadViz_mapping import Radviz3DMapping
-from RadViz._3D_submodules.plotly_3Dframe import Dataframe3DPreparation
-from RadViz._3D_submodules._3Dscatterplot_plotly import plotRadviz3D
+from radviz_plotly._3D_submodules.normalizing import matrixNormlization 
+from radviz_plotly._3D_submodules.points_onsphere import get_3Dpoints
+from radviz_plotly._3D_submodules.get_anchors_matrix import get_X3Dmatrix
+from radviz_plotly._3D_submodules.RadViz_mapping import Radviz3DMapping
+from radviz_plotly._3D_submodules.plotly_3Dframe import Dataframe3DPreparation
+from radviz_plotly._3D_submodules._3Dscatterplot_plotly import plotRadviz3D
 
 def RadViz3D(y,X,BPs):
     y.rename("index",inplace=True) 

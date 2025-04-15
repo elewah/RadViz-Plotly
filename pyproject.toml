@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "radviz-plotly"
+version = "0.1.0"
+description = "A Python package for Radial Visualization using Plotly"
+authors = ["elewah"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+plotly = "^6.0.1"
+pandas = "^2.2.3"
+numpy = "^2.2.4"
+scipy = "^1.15.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+black = "^25.1.0"
+flake8 = "^7.2.0"
+isort = "^6.0.1"
+mypy = "^1.15.0"
+pre-commit = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -4,94 +4,105 @@
     <tr>
         <td>Latest Release</td>
         <td>
-            <a href="https://pypi.org/project/RadViz-Plotly/"/>
-            <img src="https://badge.fury.io/py/RadViz-Plotly.svg"/>
+            <a href="https://pypi.org/project/RadViz-Plotly/">
+            <img src="https://badge.fury.io/py/RadViz-Plotly.svg" alt="PyPI version badge"/>
+            </a>
         </td>
     </tr>
     <tr>
         <td>Examples</td>
         <td>
-            <a href="https://mybinder.org/v2/gh/elewah/RadViz-Plotly-Examples/master"/>
-            <img src="https://img.shields.io/badge/Jupyter--Lab-Examples-orange"/>
+            <a href="https://mybinder.org/v2/gh/elewah/RadViz-Plotly-Examples/master">
+            <img src="https://img.shields.io/badge/Jupyter--Lab-Examples-orange" alt="Jupyter Lab Examples badge"/>
+            </a>
         </td>
     </tr>
     <tr>
         <td>PyPI Downloads</td>
         <td>
-            <a href="https://pepy.tech/project/RadViz-Plotly"/>
-            <img src="https://pepy.tech/badge/RadViz-Plotly"/>
+            <a href="https://pepy.tech/project/RadViz-Plotly">
+            <img src="https://pepy.tech/badge/RadViz-Plotly" alt="PyPI Downloads badge"/>
+            </a>
         </td>
     </tr>
     <tr>
         <td>License</td>
         <td>
-            <a href="https://opensource.org/licenses/MIT"/>
-            <img src="https://img.shields.io/badge/License-MIT-yellow.svg"/>
+            <a href="https://opensource.org/licenses/MIT">
+            <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License badge"/>
+            </a>
         </td>
     </tr>
 </table>
 
-## Short Description 
-RadViz-Plotly is An Open-Source Python package that data scientists can use to draw the 2D, and 3D Radial Visualization (RadViz) plots for any high-dimensional datasets. Using the 3D/2D RadViz plot, we can have a broad vision for data distribution on all provided dimensions to understand the data and discover hidden insights.
-The Radviz-Plotly package has two functions, 2DRadViz that plots the 2D Radial visualization and 3DRadViz that plots Radial visualization, using the powerful interactive tools in Plotly library.
+## Overview
+RadViz-Plotly is an open-source Python package designed for data scientists to create 2D and 3D Radial Visualization (RadViz) plots for high-dimensional datasets. These visualizations provide a comprehensive view of data distribution across dimensions, enabling better understanding and discovery of hidden insights. The package leverages the powerful interactive tools of the Plotly library.
 
+### Key Features
+- **2DRadViz**: Generates 2D Radial Visualizations.
+- **3DRadViz**: Creates 3D Radial Visualizations.
+- **Interactive Visualizations**: Zoom, filter labels, and rotate 3D graphs.
 
-## Quickstart 
-### Without Locally Installation
-Try the RadViz-Plotly package **without locally Installation
-Follow these steps**</br>
-1- Click this link [here](https://mybinder.org/v2/gh/elewah/RadViz-Plotly-Examples/master). It's a collection of interactive Jupyter notebooks  that contains three folders. Each folder contains Dataset and a Jupyter file that use RadViz-Plotly.</br>
-**Hint:**  sometimes this link takes a long time to open as jupyter's environment.</br>
-2- After the jupyter environment comes out, open Car Evaluation Dataset, Election Dataset, or Iris Dataset folder.  </br>
-3- Open file with extension **.ipynb** (the jupyter file)</br>
-4- After the jypyter file loading, from the **cell** list on the toolbar click **Run All** </br>
-**Hints:**  </br>
-A- At the first running time, it takes time to install the dependences.</br>
-B- This is an interactive RadViz package where you can make zoom, fillter lables, and rotate the 3D graph </br>
-C- This packge depends on the [plotly.py](https://plot.ly/python) packge</br>
-### With Locally Installation
- 
-1- Install **RadViz Plotly** using this command</br>
-```pip install RadViz-Plotly```
-</br>
-2- Download examples repository using this command </br>
-```git clone  https://github.com/elewah/RadViz-Plotly-Examples.git``` </br>
-or Download by clicking [here](https://github.com/elewah/RadViz-Plotly-Examples/archive/master.zip) </br>
-3- Run these examples using jupyter labs to understand how to use RadViz-Plotly package
+## Quickstart
 
----
-## Gallary
+### Without Local Installation
+You can try RadViz-Plotly without installing it locally by following these steps:
+
+1. Click [here](https://mybinder.org/v2/gh/elewah/RadViz-Plotly-Examples/master) to access interactive Jupyter notebooks. This repository contains three folders, each with datasets and a Jupyter notebook demonstrating RadViz-Plotly.
+   - **Note**: The Jupyter environment may take some time to load.
+2. Open one of the folders (e.g., Car Evaluation Dataset, Election Dataset, or Iris Dataset).
+3. Open the file with the `.ipynb` extension (Jupyter notebook).
+4. From the **Cell** menu in the toolbar, select **Run All** to execute the notebook.
+
+**Hints:**
+- The first run may take time to install dependencies.
+- The package supports interactive features like zooming, filtering labels, and rotating 3D graphs.
+- RadViz-Plotly depends on the [Plotly](https://plot.ly/python) library.
+
+### With Local Installation
+
+1. Install RadViz-Plotly using pip:
+   ```bash
+   pip install RadViz-Plotly
+   ```
+2. Clone the examples repository:
+   ```bash
+   git clone https://github.com/elewah/RadViz-Plotly-Examples.git
+   ```
+   Alternatively, download the repository as a ZIP file [here](https://github.com/elewah/RadViz-Plotly-Examples/archive/master.zip).
+3. Run the examples using Jupyter Lab to understand how to use the RadViz-Plotly package.
+
+## Gallery
+
 <p align="center">
-  <img src="https://elewah.github.io/images/ReadmePicture/3D-1.gif" width="400" title="3D RadViz">
-  <img src="https://elewah.github.io/images/ReadmePicture/3D-2.gif" width="400" title="3D RadViz">
-  <img src="https://elewah.github.io/images/ReadmePicture/Slide3.PNG" width="400" title="2D RadViz">
-  <img src="https://elewah.github.io/images/ReadmePicture/Slide2.PNG" width="400" title="3D RadViz">
+  <img src="image/3D-1.gif" width="400" alt="3D RadViz Example 1">
+  <img src="image/3D-2.gif" width="400" alt="3D RadViz Example 2">
+  <img src="image/Slide3.PNG" width="400" alt="2D RadViz Example">
+  <img src="image/Slide2.PNG" width="400" alt="3D RadViz Example">
 </p>
 
 ## About
-RadViz-Plotly is An Open-Source Python package that data scientists can use to draw the 2D, and 3D Radial Visualization (RadViz) plots for any high-dimensional datasets. Using the 3D/2D RadViz plot, we can have a broad vision for data distribution on all provided dimensions to understand the data and discover hidden insights.
-The Radviz-Plotly package has two functions, 2DRadViz that plots the 2D Radial visualization and 3DRadViz that plots Radial visualization, using the powerful interactive tools in Plotly library.
-The RadViz-Plotly package has two functions, 2DRadViz for plotting the 2D Radial visualization, and 3DRadViz for drawing the 3D Radial visualization, using the powerful interactive tools in the Plotly library. A research group on the IoT lab at Ontario tech university developed it.
+RadViz-Plotly was developed by a research group at the IoT Lab, Ontario Tech University. It provides tools for creating 2D and 3D Radial Visualizations, enabling data scientists to explore high-dimensional datasets interactively.
 
-## Citations
-Kindly cite this paper in your research if it helps your work.</br>
-[A. Elewah, A. A. Badawi, H. Khalil, S. Rahnamayan and K. Elgazzar, "3D-RadViz: Three Dimensional Radial Visualization for Large-Scale Data Visualization," 2021 IEEE Congress on Evolutionary Computation (CEC), 2021, pp. 1037-1046, doi: 10.1109/CEC45853.2021.9504983.](https://ieeexplore.ieee.org/document/9504983) 
+## Citation
+If you use RadViz-Plotly in your research, please cite the following paper:
 
-## Contact Us
- **Email:** abdelrahman.elewah@ontariotechu.ca
- 
-## Copyright and Licenses
+[A. Elewah, A. A. Badawi, H. Khalil, S. Rahnamayan, and K. Elgazzar, "3D-RadViz: Three Dimensional Radial Visualization for Large-Scale Data Visualization," 2021 IEEE Congress on Evolutionary Computation (CEC), 2021, pp. 1037-1046, doi: 10.1109/CEC45853.2021.9504983.](https://ieeexplore.ieee.org/document/9504983)
 
-Code released under the [MIT license](LICENSE).
+## Contact
+For inquiries, please contact:
+- **Email**: abdelrahman.elewah@ontariotechu.ca
 
-</br>
+## License
+This project is licensed under the [MIT License](LICENSE).
+
 <div style="display:flex; justify-content: center;">
 <a href="https://ontariotechu.ca/">
-<img src="https://elewah.github.io/Tamra/logos/ontariotechu-log.jpg"  alt="Ontariotechu Logo"  width="250" >
+<img src="image/ontariotechu-log.jpg" alt="Ontario Tech University Logo" width="250">
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://iotresearchlab.ca/">
-<img src="https://elewah.github.io/Tamra/logos/IoT-lab.png" width="300" alt="IoT-Lab Logo" title="IoT Lab">
+<img src="image/IoT-lab.png" width="300" alt="IoT Lab Logo">
 </a>
 </div>
 

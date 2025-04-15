@@ -75,10 +75,10 @@ You can try RadViz-Plotly without installing it locally by following these steps
 ## Gallery
 
 <p align="center">
-  <img src="image/3D-1.gif" width="400" alt="3D RadViz Example 1">
-  <img src="image/3D-2.gif" width="400" alt="3D RadViz Example 2">
-  <img src="image/Slide3.PNG" width="400" alt="2D RadViz Example">
-  <img src="image/Slide2.PNG" width="400" alt="3D RadViz Example">
+<img src="https://elewah.github.io/RadViz-Plotly/image/3D-1.gif" width="400" alt="3D RadViz Example 1">
+<img src="https://elewah.github.io/RadViz-Plotly/image/3D-2.gif" width="400" alt="3D RadViz Example 2">
+<img src="https://elewah.github.io/RadViz-Plotly/image/Slide3.PNG" width="400" alt="2D RadViz Example">
+<img src="https://elewah.github.io/RadViz-Plotly/image/Slide2.PNG" width="400" alt="3D RadViz Example">
 </p>
 
 ## About
@@ -89,20 +89,17 @@ If you use RadViz-Plotly in your research, please cite the following paper:
 
 [A. Elewah, A. A. Badawi, H. Khalil, S. Rahnamayan, and K. Elgazzar, "3D-RadViz: Three Dimensional Radial Visualization for Large-Scale Data Visualization," 2021 IEEE Congress on Evolutionary Computation (CEC), 2021, pp. 1037-1046, doi: 10.1109/CEC45853.2021.9504983.](https://ieeexplore.ieee.org/document/9504983)
 
-## Contact
-For inquiries, please contact:
-- **Email**: abdelrahman.elewah@ontariotechu.ca
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
 <div style="display:flex; justify-content: center;">
 <a href="https://ontariotechu.ca/">
-<img src="image/ontariotechu-log.jpg" alt="Ontario Tech University Logo" width="250">
+<img src="https://elewah.github.io/RadViz-Plotly/image/ontariotechu-log.jpg" alt="Ontario Tech University Logo" width="250">
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://iotresearchlab.ca/">
-<img src="image/IoT-lab.png" width="300" alt="IoT Lab Logo">
+<img src="https://elewah.github.io/RadViz-Plotly/image/IoT-lab.png" width="300" alt="IoT Lab Logo">
 </a>
 </div>
 

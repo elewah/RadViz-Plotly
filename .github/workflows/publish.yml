@@ -24,9 +24,6 @@ jobs:
           pip install poetry
 
       - name: Publish to PyPI
-        env:
-          TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
-          TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
         run: |
           poetry build
-          poetry publish --username $TWINE_USERNAME --password $TWINE_PASSWORD
+          poetry publish

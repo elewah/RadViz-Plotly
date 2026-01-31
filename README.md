@@ -41,7 +41,9 @@ RadViz-Plotly is an open-source Python package designed for data scientists to c
 ### Key Features
 - **2DRadViz**: Generates 2D Radial Visualizations.
 - **3DRadViz**: Creates 3D Radial Visualizations.
+- **3DRadViz with Attribute Sorting**: Creates 3D Radial Visualizations with intelligent attribute sorting based on correlation analysis.
 - **Interactive Visualizations**: Zoom, filter labels, and rotate 3D graphs.
+- **Correlation-Based Grouping**: Automatically groups highly correlated attributes and separates negatively correlated ones.
 
 ## Quickstart
 
@@ -80,6 +82,86 @@ You can try RadViz-Plotly without installing it locally by following these steps
 <img src="https://elewah.github.io/RadViz-Plotly/image/Slide3.PNG" width="400" alt="2D RadViz Example">
 <img src="https://elewah.github.io/RadViz-Plotly/image/Slide2.PNG" width="400" alt="3D RadViz Example">
 </p>
+
+## Usage Examples
+
+### Basic 2D RadViz
+```python
+import pandas as pd
+from radviz_plotly import RadViz2D
+
+# Load your dataset
+data = pd.read_csv('your_dataset.csv')
+y = data['label']  # Labels column
+X = data.drop(['label'], axis=1)  # Features
+
+# Create 2D RadViz visualization
+RadViz2D(y, X)
+```
+
+### Basic 3D RadViz
+```python
+import pandas as pd
+from radviz_plotly import RadViz3D
+
+# Load your dataset
+data = pd.read_csv('your_dataset.csv')
+y = data['label']  # Labels column
+X = data.drop(['label'], axis=1)  # Features
+
+# Create 3D RadViz visualization
+RadViz3D(y, X, BPs=10000)  # BPs = Number of boundary points
+```
+
+### 3D RadViz with Attribute Sorting (New!)
+This advanced feature automatically analyzes correlations between attributes and arranges the dimension anchors to minimize visual clutter and improve interpretability.
+
+```python
+import pandas as pd
+from radviz_plotly import RadViz3D_withSorting
+
+# Load your dataset
+data = pd.read_csv('your_dataset.csv')
+y = data['label']  # Labels column
+X = data.drop(['label'], axis=1)  # Features
+
+# Create 3D RadViz with intelligent attribute sorting
+RadViz3D_withSorting(y, X, BPs=10000)
+```
+
+**How it works:**
+1. Analyzes the correlation matrix of attributes
+2. Groups highly correlated attributes together
+3. Identifies negatively correlated attribute pairs
+4. Uses K-means clustering to determine optimal anchor positions on the sphere
+5. Arranges anchors to maximize distance between negatively correlated attributes
+
+**Installation with sorting support:**
+```bash
+# Install with sorting dependencies
+pip install RadViz-Plotly[sorting]
+
+# Or install all extras including development tools
+pip install RadViz-Plotly[sorting,dev]
+```
+
+**Requirements for sorting:**
+- scikit-learn >= 0.24.0
+- transformations >= 2020.1.1
+
+**Example with the Breast Cancer Dataset:**
+```python
+import pandas as pd
+from radviz_plotly import RadViz3D_withSorting
+
+# Load dataset
+data = pd.read_csv('tests/DataFolder/BreastCancer.csv')
+y = data['diagnosis']
+X = data.drop(['diagnosis', 'id'], axis=1)
+
+# Create visualization with sorting
+RadViz3D_withSorting(y, X, BPs=5000)
+```
 
 ## About
 RadViz-Plotly was developed by a research group at the IoT Lab, Ontario Tech University. It provides tools for creating 2D and 3D Radial Visualizations, enabling data scientists to explore high-dimensional datasets interactively.

@@ -11,21 +11,32 @@ import numpy as np
 import pandas as pd
 from numpy import pi, cos, sin, arccos, arange
 
-try:
-    from sklearn.cluster import KMeans
-    SKLEARN_AVAILABLE = True
-except ImportError:
-    SKLEARN_AVAILABLE = False
-    print("Warning: sklearn not available. RadViz3D_withSorting will not work without it.")
-
-try:
-    import transformations as trafo
-    TRANSFORMATIONS_AVAILABLE = True
-except ImportError:
-    TRANSFORMATIONS_AVAILABLE = False
-    print("Warning: transformations not available. RadViz3D_withSorting will not work without it.")
-
 from radviz_plotly._3D_submodules.points_onsphere import get_3Dpoints
+
+
+def _check_dependencies():
+    """
+    Check if required dependencies for sorting are available.
+    Returns tuple of (KMeans, transformations_module)
+    Raises ImportError with helpful message if not available.
+    """
+    try:
+        from sklearn.cluster import KMeans
+    except ImportError:
+        raise ImportError(
+            "scikit-learn is required for RadViz3D_withSorting. "
+            "Install it with: pip install scikit-learn"
+        )
+
+    try:
+        import transformations as trafo
+    except ImportError:
+        raise ImportError(
+            "transformations is required for RadViz3D_withSorting. "
+            "Install it with: pip install transformations"
+        )
+
+    return KMeans, trafo
 
 
 def unique(list1):
@@ -231,31 +242,29 @@ def worstEnemiesAnchorsSorting(anchorsCenterMax, numberOfGroups):
 def get_AnchorsWithKmeans(num_pts, numberOfClusters):
     """
     Generate anchors using K-means clustering on sphere points.
-    
+
     Parameters
     ----------
     num_pts : int
         Number of points to generate on sphere
     numberOfClusters : int
         Number of clusters for K-means
-        
+
     Returns
     -------
     tuple
         (KmeansClusterCenters, anchorsnormal, HDunitspherepoints)
     """
-    if not SKLEARN_AVAILABLE:
-        raise ImportError("sklearn is required for this function. Install it with: pip install scikit-learn")
-    if not TRANSFORMATIONS_AVAILABLE:
-        raise ImportError("transformations is required for this function. Install it with: pip install transformations")
-    
+    # Lazy import - check dependencies when actually needed
+    KMeans, trafo = _check_dependencies()
+
     HDunitspherepoints = get_3Dpoints(num_pts)
     X = HDunitspherepoints.to_numpy()
-    
+
     kmeans = KMeans(n_clusters=numberOfClusters, random_state=42)
     kmeans.fit(X)
     y_kmeans = kmeans.predict(X)
-    
+
     label = y_kmeans.astype(str)
     HDunitspherepoints = pd.DataFrame({
         'label': label,
@@ -263,7 +272,7 @@ def get_AnchorsWithKmeans(num_pts, numberOfClusters):
         'y': HDunitspherepoints['y'],
         'z': HDunitspherepoints['z']
     })
-    
+
     normal = trafo.unit_vector(kmeans.cluster_centers_, axis=1)
     anchorsnormal = pd.DataFrame({
         'label': 'normalize-lenses-focus',
@@ -271,14 +280,14 @@ def get_AnchorsWithKmeans(num_pts, numberOfClusters):
         'y': normal[:, 1],
         'z': normal[:, 2]
     })
-    
+
     KmeansClusterCenters = pd.DataFrame({
         'label': 'lenses focus',
         'x': kmeans.cluster_centers_[:, 0],
         'y': kmeans.cluster_centers_[:, 1],
         'z': kmeans.cluster_centers_[:, 2]
     })
-    
+
     return KmeansClusterCenters, anchorsnormal, HDunitspherepoints
 
 

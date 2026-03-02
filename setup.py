@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="RadViz-Plotly",
-    version="0.2.1",
+    version="0.3.0",
     author="Elewah",
     author_email="abdelrahman.elewah@gmail.com",
     description="2D and 3D RadViz library with attribute sorting, using Plotly scatter plots",
@@ -17,12 +17,10 @@ setuptools.setup(
         'plotly>=4.0.0',
         'pandas>=1.0.0',
         'numpy>=1.18.0',
+        'scikit-learn>=0.24.0',
+        'transformations>=2020.1.1',
     ],
     extras_require={
-        'sorting': [
-            'scikit-learn>=0.24.0',
-            'transformations>=2020.1.1',
-        ],
         'dev': [
             'pytest>=7.0.0',
             'black>=23.0.0',

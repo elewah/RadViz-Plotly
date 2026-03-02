@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "radviz-plotly"
-version = "0.2.0"
+version = "0.2.1"
 description = "A Python package for 2D and 3D Radial Visualization using Plotly with attribute sorting"
 authors = ["elewah <abdelrahman.elewah@gmail.com>"]
 license = "MIT"

@@ -12,8 +12,8 @@
     <tr>
         <td>Examples</td>
         <td>
-            <a href="https://mybinder.org/v2/gh/elewah/RadViz-Plotly-Examples/master">
-            <img src="https://img.shields.io/badge/Jupyter--Lab-Examples-orange" alt="Jupyter Lab Examples badge"/>
+            <a href="https://colab.research.google.com/github/elewah/RadViz-Plotly/blob/master/examples/BreastCancer_Demo.ipynb">
+            <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
             </a>
         </td>
     </tr>
@@ -47,8 +47,19 @@ RadViz-Plotly is an open-source Python package designed for data scientists to c
 
 ## Quickstart
 
-### Without Local Installation
-You can try RadViz-Plotly without installing it locally by following these steps:
+### Try Online with Google Colab (Recommended)
+
+Click the Colab badge above to open an interactive notebook demonstrating all three RadViz functions with the Breast Cancer dataset. No installation required - runs entirely in the cloud!
+
+**Steps:**
+1. Click the Colab badge in the table above
+2. Wait for the notebook to load (~10 seconds)
+3. Run all cells (Runtime → Run all)
+4. Explore interactive visualizations
+
+### Try with Binder (Alternative)
+
+Alternatively, you can try RadViz-Plotly using Binder:
 
 1. Click [here](https://mybinder.org/v2/gh/elewah/RadViz-Plotly-Examples/master) to access interactive Jupyter notebooks. This repository contains three folders, each with datasets and a Jupyter notebook demonstrating RadViz-Plotly.
    - **Note**: The Jupyter environment may take some time to load.
@@ -82,6 +93,16 @@ You can try RadViz-Plotly without installing it locally by following these steps
 <img src="https://elewah.github.io/RadViz-Plotly/image/Slide3.PNG" width="400" alt="2D RadViz Example">
 <img src="https://elewah.github.io/RadViz-Plotly/image/Slide2.PNG" width="400" alt="3D RadViz Example">
 </p>
+
+## Interactive Visualizations
+
+Explore live interactive HTML visualizations using the Breast Cancer dataset. These demos run directly in your browser with full Plotly interactivity (zoom, pan, rotate, filter labels):
+
+- **[2D RadViz Demo](https://htmlpreview.github.io/?https://github.com/elewah/RadViz-Plotly/blob/master/iframe_figures/BreastCancer_2D_RadViz.html)** - 2D radial visualization on a circle
+- **[3D RadViz Demo](https://htmlpreview.github.io/?https://github.com/elewah/RadViz-Plotly/blob/master/iframe_figures/BreastCancer_3D_RadViz.html)** - 3D radial visualization on a sphere
+- **[3D RadViz with Sorting Demo](https://htmlpreview.github.io/?https://github.com/elewah/RadViz-Plotly/blob/master/iframe_figures/BreastCancer_3D_RadViz_Sorted.html)** - 3D visualization with intelligent correlation-based attribute sorting
+
+*Note: HTML files are ~5MB each and may take a few seconds to load.*
 
 ## Usage Examples
 
